@@ -1,25 +1,48 @@
 import React from 'react';
-import logo from './logo.svg';
 import './App.css';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
+    <>
+    <nav class="navbar">
+      <div class="container">
+        <a href="#">Hulk</a>
+        <a href="#" class="logo is-active">Mavel</a>
+        <a href="#">Venom</a>
+      </div>
+    </nav>
+   
+    <header class="header">
+      <div class="container">
+        <h1 class="title">Mavel's Fearless</h1>
+        <p class="subtitle">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. beatae
+          molestias earum eveniet.
         </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+        <div class="search-bar">
+          <input type="search" placeholder="Search" />
+        </div>
+
+        
+        <div class="sample-wallpaper">
+          
+          <article class="wallpaper">
+            <img src="venom.jpg" alt="Wallpaper #1" class="wallpaper" />
+          </article>
+
+         
+          <article class="wallpaper">
+            <img src="hulk.jpg" alt="Wallpaper #1" class="wallpaper" />
+          </article>
+
+          
+          <article class="wallpaper">
+            <img src="venoms.jpg" alt="Wallpaper #1" class="wallpaper" />
+          </article>
+        </div>
+      </div>
+    </header>
+    </>
   );
 }
 
